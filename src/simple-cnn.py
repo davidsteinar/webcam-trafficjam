@@ -25,14 +25,35 @@ class model:
     Y = tf.placeholder(tf.float32, [None])
 
     # weights init
-    W_conv_1 = tf.Variable(tf.truncated_normal([5,5,3,4], stddev=0.1))
+    W_conv_1 = tf.Variable(tf.truncated_normal([10,10,3,4], stddev=0.1))
     b_conv_1 = tf.Variable(tf.ones([4]))
 
-    W_dense_1 = tf.Variable(tf.truncated_normal([3,3], stddev=0.1))
+    W_dense_1 = tf.Variable(tf.truncated_normal([3072,100], stddev=0.1))
     b_dense_1 = tf.Variable(tf.ones([100]))
 
+    W_out = tf.Variable(tf.truncated_normal([100,1], stddev=0.1))
+    b_out = tf.Variable(tf.ones([1]))
+
+
     # model architecture
-    #conv1 = tf.nn.relu(tf.nn.conv2d(X, W_conv_1, strides=[1,1,1,1], padding="SAME") + b_conv_1) # (?,  28, 28, 4)
+    conv1 = tf.nn.relu(tf.nn.conv2d(X, W_conv_1, strides=[10,10,10,10], padding="SAME") + b_conv_1)
+    pool1 = tf.layers.max_pooling2d(inputs=conv1, pool_size=[2, 2], strides=2)
+
+    print(pool1.shape)
+    flattened_conv = tf.reshape(conv1, [-1, 3072])
+
+    dense1 = tf.nn.relu(tf.matmul(flattened_conv, W_dense_1) + b_dense_1)
+    out_layer = tf.matmul(dense1, W_out) + b_out
+
+    # loss
+    MSE = tf.reduce_mean(tf.square(tf.subtract(Y, out_layer))
+
+    def train(max_iters):
+
+        #train model!
+
+
+
 def main():
 
     # 1. read data
@@ -41,6 +62,8 @@ def main():
 
     # 3 init model
     our_model = model()
+
+    out_model.train(10)
 
 
 if __name__ == "__main__":
