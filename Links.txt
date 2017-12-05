@@ -1,0 +1,11 @@
+*** This document contains links to papers with models solving similar tasks ***
+
+
+	* TRANCOS dataset description
+	http://agamenon.tsc.uah.es/Personales/rlopez/data/trancos/
+
+
+	* Towards Perspective-Free Object Counting with Deep Learning
+	https://link.springer.com/chapter/10.1007/978-3-319-46478-7_38 
+
+
