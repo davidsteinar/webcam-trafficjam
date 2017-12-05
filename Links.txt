@@ -6,6 +6,8 @@
 
 
 	* Towards Perspective-Free Object Counting with Deep Learning
-	https://link.springer.com/chapter/10.1007/978-3-319-46478-7_38 
+	https://link.springer.com/chapter/10.1007/978-3-319-46478-7_38
 
 
+ * Object Recognition and Object Counting using CNNs
+http://home.iitk.ac.in/~saurabhk/cs676a_project_report.pdf
