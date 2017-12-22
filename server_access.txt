@@ -1,0 +1,15 @@
+kommandon:
+
+ssh -i mlproject.pem -L 8157:127.0.0.1:8888 ubuntu@ec2-52-15-49-24.us-east-2.compute.amazonaws.com
+
+där mlproject.pem är private key filen
+
+kör 
+
+jupyter notebook
+
+och öppna:
+
+http://localhost:8157/?token=340eb2b06a26dad71ac5f224758943dd65978b283876cce3
+
+
