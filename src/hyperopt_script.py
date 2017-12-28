@@ -16,13 +16,12 @@ CHANNELS = 3
 
 # Parameters
 num_steps = 1
-
+X_train_batch, Y_train_batch = read_images(DATASET_PATH, batch_size=10, mode='train')
+X_test_batch, Y_test_batch   = read_images(DATASET_PATH, batch_size=10, mode='test')
+X_val_batch, Y_val_batch     = read_images(DATASET_PATH, batch_size=10, mode='validation')
 
 def f(space):
     # Build the data input
-    X_train_batch, Y_train_batch = read_images(DATASET_PATH, batch_size=space['batch_size'], mode='train')
-    X_test_batch, Y_test_batch   = read_images(DATASET_PATH, batch_size=space['batch_size'], mode='test')
-    X_val_batch, Y_val_batch     = read_images(DATASET_PATH, batch_size=space['batch_size'], mode='validation')
     # Create a graph for training
     logits_train = conv_net(X_train_batch,
                             dropout=space['dropout'],
@@ -36,7 +35,7 @@ def f(space):
     loss_op   = tf.reduce_mean(tf.square(tf.subtract(Y_train_batch, logits_train))) #mean square error
     optimizer = tf.train.AdamOptimizer(learning_rate=space['learning_rate'])
     train_op  = optimizer.minimize(loss_op)
-    
+    trainloss_runner = 0
     # Evaluate model (with test logits, for dropout to be disabled)
     #test_loss = tf.reduce_mean(tf.square(tf.subtract(Y_batch_train, logits_test)))
     with tf.Session() as sess:
@@ -52,7 +51,7 @@ def f(space):
             if step % 100 == 0:
                 # Run optimization and calculate batch loss and accuracy
                 _, trainloss = sess.run([train_op, loss_op])
-                t.append(trainloss)
+                trainloss_runner = trainloss
                 print("Step " + str(step) + ", Train minibatch Loss= " + \
                       "{:.4f}".format(trainloss))
                 
@@ -61,26 +60,27 @@ def f(space):
                 # Only run the optimization op (backprop)
                 sess.run(train_op)
             
-    #coord.request_stop()
-    #coord.join(threads)
+    coord.request_stop()
+    coord.join(threads)
   
-    return(trainloss) #thing to be minimized
+    return(trainloss_runner) #thing to be minimized
 
 
     
 space = {'learning_rate': hp.uniform('lr', 0.0001, 0.01), ############################## crucial
-         'batch_size': hp.choice('bs', [32, 64, 128]),
          'dropout': hp.uniform('dr', 0.1, 0.5),
          'kernel_size' : hp.choice('kernel', [3,5,7,9])}
-    
+         
+#         'batch_size': hp.choice('bs', [32, 64, 128]),
+
 best = fmin(
     fn=f,
     space=space,
     algo=tpe.suggest,
-    max_evals = 10)  ################################################################## crucial)
+    max_evals = 2)  ################################################################## crucial)
 
 print("Found minimum with parameters:")
 print(best)
 
 with open('hyperopt_best.txt', 'w') as f:
-    f.write(best)
+    f.write(str(best))
