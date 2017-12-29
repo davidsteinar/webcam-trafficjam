@@ -157,8 +157,8 @@ def f(space):
         coord.request_stop()
         coord.join(threads)
         
-    last100meanloss = sum(testlossrunner[-100:])/100 #mean of the last 100 batch losses
-    return(last100meanloss) #thing to be minimized for hyperopt alg.
+    last10meanloss = sum(testlossrunner[-10:])/10 #mean of the last 100 batch losses
+    return(last10meanloss) #thing to be minimized for hyperopt alg.
 
 
     
