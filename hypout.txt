@@ -1,0 +1,312 @@
+********* NEW parameter setup *********
+Learning rate: 0.0097
+kernel size: 7.0000
+dropout: 0.1217
+Step 0, Train batch loss: 1425.765, Test batch loss: 4599355.000
+Step 100, Train batch loss: 1865.324, Test batch loss: 1818.629
+Step 200, Train batch loss: 1331.660, Test batch loss: 1802.392
+Step 300, Train batch loss: 1305.060, Test batch loss: 1781.499
+Step 400, Train batch loss: 1230.348, Test batch loss: 1756.892
+Step 500, Train batch loss: 1619.824, Test batch loss: 1729.313
+Step 600, Train batch loss: 1460.034, Test batch loss: 1699.182
+Step 700, Train batch loss: 1232.855, Test batch loss: 1666.982
+Step 800, Train batch loss: 1356.483, Test batch loss: 1632.903
+Step 900, Train batch loss: 1715.632, Test batch loss: 1597.397
+Step 1000, Train batch loss: 1807.743, Test batch loss: 1560.531
+********* NEW parameter setup *********
+Learning rate: 0.0061
+kernel size: 7.0000
+dropout: 0.3988
+Step 0, Train batch loss: 1409.067, Test batch loss: 1343822.500
+Step 100, Train batch loss: 1403.019, Test batch loss: 1816.500
+Step 200, Train batch loss: 1495.826, Test batch loss: 1798.631
+Step 300, Train batch loss: 1491.279, Test batch loss: 1776.347
+Step 400, Train batch loss: 1671.757, Test batch loss: 1751.042
+Step 500, Train batch loss: 1235.601, Test batch loss: 1723.475
+Step 600, Train batch loss: 1676.063, Test batch loss: 1694.250
+Step 700, Train batch loss: 1211.915, Test batch loss: 1663.739
+Step 800, Train batch loss: 1164.291, Test batch loss: 1632.328
+Step 900, Train batch loss: 1194.330, Test batch loss: 1600.200
+Step 1000, Train batch loss: 1313.545, Test batch loss: 1567.636
+********* NEW parameter setup *********
+Learning rate: 0.0036
+kernel size: 7.0000
+dropout: 0.3422
+Step 0, Train batch loss: 1687.131, Test batch loss: 139465.062
+Step 100, Train batch loss: 1371.636, Test batch loss: 1810.201
+Step 200, Train batch loss: 1183.651, Test batch loss: 1788.297
+Step 300, Train batch loss: 1749.478, Test batch loss: 1764.470
+Step 400, Train batch loss: 1506.632, Test batch loss: 1739.881
+Step 500, Train batch loss: 1465.934, Test batch loss: 1714.966
+Step 600, Train batch loss: 1381.008, Test batch loss: 1689.802
+Step 700, Train batch loss: 1258.690, Test batch loss: 1664.728
+Step 800, Train batch loss: 1495.697, Test batch loss: 1639.728
+Step 900, Train batch loss: 1344.127, Test batch loss: 1614.890
+Step 1000, Train batch loss: 1326.499, Test batch loss: 1590.293
+********* NEW parameter setup *********
+Learning rate: 0.0096
+kernel size: 7.0000
+dropout: 0.1480
+Step 0, Train batch loss: 1435.759, Test batch loss: 20455764.000
+Step 100, Train batch loss: 1273.481, Test batch loss: 1823.305
+Step 200, Train batch loss: 1738.106, Test batch loss: 1815.420
+Step 300, Train batch loss: 1524.065, Test batch loss: 1805.062
+Step 400, Train batch loss: 1333.292, Test batch loss: 1792.592
+Step 500, Train batch loss: 1420.873, Test batch loss: 1778.352
+Step 600, Train batch loss: 1957.301, Test batch loss: 1762.334
+Step 700, Train batch loss: 1412.907, Test batch loss: 1744.821
+Step 800, Train batch loss: 1190.709, Test batch loss: 1725.836
+Step 900, Train batch loss: 1209.183, Test batch loss: 1705.436
+Step 1000, Train batch loss: 1378.155, Test batch loss: 1683.702
+********* NEW parameter setup *********
+Learning rate: 0.0061
+kernel size: 3.0000
+dropout: 0.3723
+Step 0, Train batch loss: 1378.991, Test batch loss: 158280.266
+Step 100, Train batch loss: 373.646, Test batch loss: 357.493
+Step 200, Train batch loss: 234.963, Test batch loss: 319.331
+Step 300, Train batch loss: 214.457, Test batch loss: 318.256
+Step 400, Train batch loss: 138.577, Test batch loss: 363.861
+Step 500, Train batch loss: 288.544, Test batch loss: 405.953
+Step 600, Train batch loss: 314.826, Test batch loss: 355.485
+Step 700, Train batch loss: 215.913, Test batch loss: 293.001
+Step 800, Train batch loss: 356.904, Test batch loss: 288.771
+Step 900, Train batch loss: 176.318, Test batch loss: 294.323
+Step 1000, Train batch loss: 268.703, Test batch loss: 286.480
+********* NEW parameter setup *********
+Learning rate: 0.0064
+kernel size: 7.0000
+dropout: 0.4137
+Step 0, Train batch loss: 1529.480, Test batch loss: 1024459.375
+Step 100, Train batch loss: 1508.892, Test batch loss: 1814.383
+Step 200, Train batch loss: 1596.796, Test batch loss: 1793.420
+Step 300, Train batch loss: 1691.885, Test batch loss: 1767.658
+Step 400, Train batch loss: 1367.069, Test batch loss: 1738.670
+Step 500, Train batch loss: 1444.932, Test batch loss: 1707.426
+Step 600, Train batch loss: 1371.521, Test batch loss: 1674.585
+Step 700, Train batch loss: 1485.823, Test batch loss: 1640.617
+Step 800, Train batch loss: 1454.295, Test batch loss: 1605.865
+Step 900, Train batch loss: 1319.988, Test batch loss: 1570.627
+Step 1000, Train batch loss: 1470.706, Test batch loss: 1535.112
+********* NEW parameter setup *********
+Learning rate: 0.0009
+kernel size: 5.0000
+dropout: 0.4574
+Step 0, Train batch loss: 2005.625, Test batch loss: 469.871
+Step 100, Train batch loss: 182.693, Test batch loss: 301.492
+Step 200, Train batch loss: 544.430, Test batch loss: 404.270
+Step 300, Train batch loss: 223.075, Test batch loss: 342.764
+Step 400, Train batch loss: 193.430, Test batch loss: 313.188
+Step 500, Train batch loss: 183.088, Test batch loss: 343.893
+Step 600, Train batch loss: 166.779, Test batch loss: 328.032
+Step 700, Train batch loss: 150.199, Test batch loss: 308.129
+Step 800, Train batch loss: 177.438, Test batch loss: 337.443
+Step 900, Train batch loss: 305.118, Test batch loss: 307.774
+Step 1000, Train batch loss: 275.035, Test batch loss: 380.160
+********* NEW parameter setup *********
+Learning rate: 0.0036
+kernel size: 5.0000
+dropout: 0.3028
+Step 0, Train batch loss: 1423.161, Test batch loss: 65447.910
+Step 100, Train batch loss: 1605.484, Test batch loss: 1806.382
+Step 200, Train batch loss: 1537.903, Test batch loss: 1781.701
+Step 300, Train batch loss: 1478.824, Test batch loss: 1755.988
+Step 400, Train batch loss: 1433.154, Test batch loss: 1729.992
+Step 500, Train batch loss: 1466.963, Test batch loss: 1703.977
+Step 600, Train batch loss: 1401.757, Test batch loss: 1678.087
+Step 700, Train batch loss: 1289.144, Test batch loss: 1652.379
+Step 800, Train batch loss: 1347.849, Test batch loss: 1626.893
+Step 900, Train batch loss: 1317.203, Test batch loss: 1601.652
+Step 1000, Train batch loss: 1216.770, Test batch loss: 1576.685
+********* NEW parameter setup *********
+Learning rate: 0.0014
+kernel size: 9.0000
+dropout: 0.2667
+Step 0, Train batch loss: 1556.799, Test batch loss: 1809.685
+Step 100, Train batch loss: 327.913, Test batch loss: 306.288
+Step 200, Train batch loss: 300.354, Test batch loss: 308.275
+Step 300, Train batch loss: 308.151, Test batch loss: 296.308
+Step 400, Train batch loss: 193.915, Test batch loss: 326.282
+Step 500, Train batch loss: 227.601, Test batch loss: 293.798
+Step 600, Train batch loss: 145.994, Test batch loss: 298.306
+Step 700, Train batch loss: 217.074, Test batch loss: 297.976
+Step 800, Train batch loss: 205.964, Test batch loss: 350.901
+Step 900, Train batch loss: 183.415, Test batch loss: 306.977
+Step 1000, Train batch loss: 337.349, Test batch loss: 333.182
+********* NEW parameter setup *********
+Learning rate: 0.0018
+kernel size: 5.0000
+dropout: 0.1305
+Step 0, Train batch loss: 1626.137, Test batch loss: 7836.774
+Step 100, Train batch loss: 207.077, Test batch loss: 303.952
+Step 200, Train batch loss: 212.496, Test batch loss: 295.084
+Step 300, Train batch loss: 225.595, Test batch loss: 295.380
+Step 400, Train batch loss: 302.584, Test batch loss: 293.529
+Step 500, Train batch loss: 192.324, Test batch loss: 293.548
+Step 600, Train batch loss: 410.384, Test batch loss: 292.509
+Step 700, Train batch loss: 232.960, Test batch loss: 293.583
+Step 800, Train batch loss: 374.449, Test batch loss: 324.462
+Step 900, Train batch loss: 295.910, Test batch loss: 295.208
+Step 1000, Train batch loss: 192.717, Test batch loss: 289.060
+********* NEW parameter setup *********
+Learning rate: 0.0034
+kernel size: 3.0000
+dropout: 0.1158
+Step 0, Train batch loss: 1123.574, Test batch loss: 34414.336
+Step 100, Train batch loss: 321.554, Test batch loss: 332.169
+Step 200, Train batch loss: 163.373, Test batch loss: 307.893
+Step 300, Train batch loss: 436.600, Test batch loss: 374.066
+Step 400, Train batch loss: 224.442, Test batch loss: 308.428
+Step 500, Train batch loss: 258.084, Test batch loss: 384.785
+Step 600, Train batch loss: 239.562, Test batch loss: 320.583
+Step 700, Train batch loss: 213.601, Test batch loss: 380.040
+Step 800, Train batch loss: 175.743, Test batch loss: 292.741
+Step 900, Train batch loss: 332.677, Test batch loss: 306.341
+Step 1000, Train batch loss: 304.718, Test batch loss: 302.023
+********* NEW parameter setup *********
+Learning rate: 0.0087
+kernel size: 5.0000
+dropout: 0.4438
+Step 0, Train batch loss: 1684.373, Test batch loss: 1082735.250
+Step 100, Train batch loss: 1854.286, Test batch loss: 1811.717
+Step 200, Train batch loss: 1328.359, Test batch loss: 1784.690
+Step 300, Train batch loss: 1529.524, Test batch loss: 1751.372
+Step 400, Train batch loss: 1489.519, Test batch loss: 1714.074
+Step 500, Train batch loss: 1371.336, Test batch loss: 1674.004
+Step 600, Train batch loss: 1533.404, Test batch loss: 1631.916
+Step 700, Train batch loss: 1389.695, Test batch loss: 1588.634
+Step 800, Train batch loss: 1198.956, Test batch loss: 1544.659
+Step 900, Train batch loss: 916.205, Test batch loss: 1500.134
+Step 1000, Train batch loss: 816.777, Test batch loss: 1455.573
+********* NEW parameter setup *********
+Learning rate: 0.0017
+kernel size: 3.0000
+dropout: 0.1610
+Step 0, Train batch loss: 1483.341, Test batch loss: 688.827
+Step 100, Train batch loss: 192.404, Test batch loss: 290.447
+Step 200, Train batch loss: 228.753, Test batch loss: 279.412
+Step 300, Train batch loss: 222.175, Test batch loss: 265.124
+Step 400, Train batch loss: 260.081, Test batch loss: 287.599
+Step 500, Train batch loss: 307.755, Test batch loss: 268.764
+Step 600, Train batch loss: 228.514, Test batch loss: 329.152
+Step 700, Train batch loss: 215.223, Test batch loss: 265.596
+Step 800, Train batch loss: 213.441, Test batch loss: 279.467
+Step 900, Train batch loss: 259.363, Test batch loss: 272.152
+Step 1000, Train batch loss: 254.294, Test batch loss: 280.362
+********* NEW parameter setup *********
+Learning rate: 0.0058
+kernel size: 7.0000
+dropout: 0.3407
+Step 0, Train batch loss: 1534.067, Test batch loss: 450098.031
+Step 100, Train batch loss: 1525.245, Test batch loss: 1812.022
+Step 200, Train batch loss: 1536.021, Test batch loss: 1787.331
+Step 300, Train batch loss: 1456.172, Test batch loss: 1758.128
+Step 400, Train batch loss: 1152.365, Test batch loss: 1726.314
+Step 500, Train batch loss: 1265.940, Test batch loss: 1692.906
+Step 600, Train batch loss: 933.594, Test batch loss: 1658.762
+Step 700, Train batch loss: 1257.438, Test batch loss: 1623.739
+Step 800, Train batch loss: 1392.742, Test batch loss: 1588.706
+Step 900, Train batch loss: 1297.775, Test batch loss: 1553.812
+Step 1000, Train batch loss: 1048.350, Test batch loss: 1519.141
+********* NEW parameter setup *********
+Learning rate: 0.0064
+kernel size: 5.0000
+dropout: 0.2389
+Step 0, Train batch loss: 1372.985, Test batch loss: 356186.969
+Step 100, Train batch loss: 1734.562, Test batch loss: 1752.119
+Step 200, Train batch loss: 1944.323, Test batch loss: 1520.150
+Step 300, Train batch loss: 1072.931, Test batch loss: 1208.635
+Step 400, Train batch loss: 832.128, Test batch loss: 942.855
+Step 500, Train batch loss: 603.785, Test batch loss: 737.474
+Step 600, Train batch loss: 697.259, Test batch loss: 657.168
+Step 700, Train batch loss: 497.302, Test batch loss: 609.159
+Step 800, Train batch loss: 624.863, Test batch loss: 602.381
+Step 900, Train batch loss: 566.601, Test batch loss: 599.232
+Step 1000, Train batch loss: 386.474, Test batch loss: 620.628
+********* NEW parameter setup *********
+Learning rate: 0.0044
+kernel size: 3.0000
+dropout: 0.4274
+Step 0, Train batch loss: 1277.456, Test batch loss: 40837.508
+Step 100, Train batch loss: 754.942, Test batch loss: 674.333
+Step 200, Train batch loss: 565.637, Test batch loss: 733.988
+Step 300, Train batch loss: 631.526, Test batch loss: 659.945
+Step 400, Train batch loss: 541.666, Test batch loss: 651.286
+Step 500, Train batch loss: 733.696, Test batch loss: 705.541
+Step 600, Train batch loss: 471.629, Test batch loss: 642.858
+Step 700, Train batch loss: 704.223, Test batch loss: 729.139
+Step 800, Train batch loss: 535.628, Test batch loss: 694.711
+Step 900, Train batch loss: 710.640, Test batch loss: 660.757
+Step 1000, Train batch loss: 593.543, Test batch loss: 606.998
+********* NEW parameter setup *********
+Learning rate: 0.0031
+kernel size: 9.0000
+dropout: 0.3780
+Step 0, Train batch loss: 1341.701, Test batch loss: 416596.031
+Step 100, Train batch loss: 1630.510, Test batch loss: 1816.448
+Step 200, Train batch loss: 1740.576, Test batch loss: 1802.215
+Step 300, Train batch loss: 1633.210, Test batch loss: 1785.548
+Step 400, Train batch loss: 1385.180, Test batch loss: 1767.492
+Step 500, Train batch loss: 1712.575, Test batch loss: 1748.534
+Step 600, Train batch loss: 1831.954, Test batch loss: 1729.030
+Step 700, Train batch loss: 1711.963, Test batch loss: 1709.136
+Step 800, Train batch loss: 1487.635, Test batch loss: 1688.974
+Step 900, Train batch loss: 1473.313, Test batch loss: 1668.696
+Step 1000, Train batch loss: 1266.100, Test batch loss: 1648.339
+********* NEW parameter setup *********
+Learning rate: 0.0025
+kernel size: 5.0000
+dropout: 0.1306
+Step 0, Train batch loss: 1170.036, Test batch loss: 12162.205
+Step 100, Train batch loss: 1323.546, Test batch loss: 1803.403
+Step 200, Train batch loss: 1643.972, Test batch loss: 1760.485
+Step 300, Train batch loss: 1437.166, Test batch loss: 1686.500
+Step 400, Train batch loss: 1233.556, Test batch loss: 1585.313
+Step 500, Train batch loss: 1142.076, Test batch loss: 1466.191
+Step 600, Train batch loss: 1414.940, Test batch loss: 1339.162
+Step 700, Train batch loss: 983.824, Test batch loss: 1213.360
+Step 800, Train batch loss: 882.547, Test batch loss: 1097.438
+Step 900, Train batch loss: 496.155, Test batch loss: 992.021
+Step 1000, Train batch loss: 596.589, Test batch loss: 826.623
+********* NEW parameter setup *********
+Learning rate: 0.0025
+kernel size: 3.0000
+dropout: 0.2645
+Step 0, Train batch loss: 1575.703, Test batch loss: 6138.841
+Step 100, Train batch loss: 363.760, Test batch loss: 298.099
+Step 200, Train batch loss: 263.530, Test batch loss: 303.977
+Step 300, Train batch loss: 326.565, Test batch loss: 288.473
+Step 400, Train batch loss: 195.168, Test batch loss: 352.193
+Step 500, Train batch loss: 294.774, Test batch loss: 302.243
+Step 600, Train batch loss: 211.911, Test batch loss: 291.127
+Step 700, Train batch loss: 382.319, Test batch loss: 304.063
+Step 800, Train batch loss: 303.772, Test batch loss: 291.943
+Step 900, Train batch loss: 233.717, Test batch loss: 292.781
+Step 1000, Train batch loss: 375.824, Test batch loss: 358.602
+********* NEW parameter setup *********
+Learning rate: 0.0011
+kernel size: 3.0000
+dropout: 0.3495
+Step 0, Train batch loss: 1567.443, Test batch loss: 348.753
+Step 100, Train batch loss: 262.303, Test batch loss: 353.585
+Step 200, Train batch loss: 157.308, Test batch loss: 287.194
+Step 300, Train batch loss: 321.039, Test batch loss: 323.745
+Step 400, Train batch loss: 137.946, Test batch loss: 296.340
+Step 500, Train batch loss: 273.453, Test batch loss: 283.101
+Step 600, Train batch loss: 194.521, Test batch loss: 287.896
+Step 700, Train batch loss: 428.840, Test batch loss: 316.093
+Step 800, Train batch loss: 217.868, Test batch loss: 306.278
+Step 900, Train batch loss: 230.882, Test batch loss: 302.613
+Step 1000, Train batch loss: 129.697, Test batch loss: 326.528
+********* NEW parameter setup *********
+Learning rate: 0.0078
+kernel size: 3.0000
+dropout: 0.1900
+Step 0, Train batch loss: 1653.963, Test batch loss: 752826.125
+Step 100, Train batch loss: 1385.134, Test batch loss: 1810.118
+Step 200, Train batch loss: 1771.216, Test batch loss: 1781.247
+Step 300, Train batch loss: 1539.622, Test batch loss: 1746.500
+Step 400, Train batch loss: 1276.192, Test batch loss: 1708.172
+Step 500, Train batch loss: 1443.936, Test batch loss: 1667.568
+Step 600, Train batch loss: 1371.155, Test batch loss: 1625.538
+Step 700, Train batch loss: 1369.054, Test batch loss: 1582.695

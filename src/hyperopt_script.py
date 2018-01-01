@@ -4,7 +4,7 @@ import os
 from hyperopt import fmin, tpe, hp
 
 # Dataset Parameters
-DATASET_PATH = '../data/TRANCOS_v3/'
+DATASET_PATH = 'TRANCOS_v3/'
 
 # Image Parameters
 IMG_HEIGHT = 112
@@ -104,7 +104,7 @@ def f(space):
     tf.reset_default_graph()
     
     X_train_batch, Y_train_batch = read_images(DATASET_PATH, batch_size=space['batch_size'], mode='train')
-    X_test_batch, Y_test_batch   = read_images(DATASET_PATH, batch_size=space['batch_size'], mode='test')
+    X_test_data, Y_test_data   = read_images(DATASET_PATH, batch_size = 421, mode='test')
     # Build the data input
     # Create a graph for training
     logits_train = conv_net(X_train_batch,
@@ -114,7 +114,7 @@ def f(space):
                             filters=32,
                             hiddenunits=100)
     # Create another graph for testing that reuse the same weights
-    logits_test = conv_net(X_test_batch, reuse=True,
+    logits_test = conv_net(X_test_data, reuse=True,
                             dropout=space['dropout'],
                             kernel_size=space['kernel_size'],
                             filters=32,
@@ -122,7 +122,7 @@ def f(space):
     
     # Define loss and optimizer
     train_loss = tf.reduce_mean(tf.square(tf.subtract(Y_train_batch, logits_train))) #mean square error
-    test_loss  = tf.reduce_mean(tf.square(tf.subtract(Y_test_batch, logits_test)))
+    test_loss  = tf.reduce_mean(tf.square(tf.subtract(Y_test_data, logits_test)))
     
     optimizer = tf.train.AdamOptimizer(learning_rate=space['learning_rate'])
     train_op  = optimizer.minimize(train_loss)
@@ -130,7 +130,6 @@ def f(space):
     # Saver object
     saver = tf.train.Saver()
     num_steps = 1_000 #number of batches trained
-    testlossrunner = []
     # Start training
     with tf.Session() as sess:
         # Run the initializer
@@ -138,17 +137,22 @@ def f(space):
         # initialize the queue threads
         coord = tf.train.Coordinator()
         threads = tf.train.start_queue_runners(coord=coord)
+        print("********* NEW parameter setup *********")
+        print("Learning rate: " + \
+            "{:.4f}".format(space['learning_rate']))
+        print("kernel size: " + \
+            "{:.4f}".format(space['kernel_size']))
+        print("dropout: " + \
+            "{:.4f}".format(space['dropout']))
+	
     
         # Training
         # Step is when your model trains on a single batch
+        
         for step in range(num_steps+1):
-            if step % 10 == 0:
-                # Run optimization and calculate batch test and train loss
-                _, batchtrainloss, batchtestloss = sess.run([train_op, train_loss, test_loss])
-                testlossrunner.append(batchtestloss)
             if step % 100 == 0: #print losses
-                _, batchtrainloss, batchtestloss = sess.run([train_op, train_loss, test_loss])
-                print('Step {}, Train batch loss: {:.3f}, Test batch loss: {:.3f}'.format(step, batchtrainloss, batchtestloss))
+                _, batchtrainloss, test_loss_score = sess.run([train_op, train_loss, test_loss])
+                print('Step {}, Train batch loss: {:.3f}, Test batch loss: {:.3f}'.format(step, batchtrainloss, test_loss_score))
                 
             else:
                 # Only run backprop
@@ -157,8 +161,8 @@ def f(space):
         coord.request_stop()
         coord.join(threads)
         
-    last10meanloss = sum(testlossrunner[-10:])/10 #mean of the last 100 batch losses
-    return(last10meanloss) #thing to be minimized for hyperopt alg.
+    #last10meanloss = sum(testlossrunner[-10:])/10 #mean of the last 100 batch losses
+    return(test_loss_score) #thing to be minimized for hyperopt alg.
 
 
     
@@ -171,7 +175,7 @@ best = fmin(
     fn=f,
     space=space,
     algo=tpe.suggest,
-    max_evals = 2)  ################################################################## crucial)
+    max_evals = 50)  ################################################################## crucial)
 
 print("Found minimum with parameters:")
 print(best)
