@@ -2,9 +2,12 @@ import pprint
 import pycurl
 from io import BytesIO
 import json
+import sys
 
 path = "/data"
 data = BytesIO()
+id = sys.argv[1]
+
 c = pycurl.Curl()
 c.setopt(c.URL, 'https://webcamstravel.p.mashape.com/webcams/list/webcam="+ id + "?lang=en&show=webcams%3Aimage')
 c.setopt(c.WRITEFUNCTION, data.write)
