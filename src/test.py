@@ -6,7 +6,7 @@ import json
 path = "/data"
 data = BytesIO()
 c = pycurl.Curl()
-c.setopt(c.URL, 'https://webcamstravel.p.mashape.com/webcams/list/webcam=1508414354?lang=en&show=webcams%3Aimage')
+c.setopt(c.URL, 'https://webcamstravel.p.mashape.com/webcams/list/webcam="+ id + "?lang=en&show=webcams%3Aimage')
 c.setopt(c.WRITEFUNCTION, data.write)
 c.setopt(c.HTTPHEADER, ['X-Mashape-Key: MXoQyRzvhvmshzJOk2Oe9IweEpLfp1W1feUjsnLBt5yv7NJoVs'])
 c.perform()
@@ -22,6 +22,6 @@ for item in dictionary.get("result",{}).get("webcams",{}):
 
     c = pycurl.Curl()
     c.setopt(c.URL, res)
-    with open('data/' + name,'wb') as f:
+    with open('data/' + "id.jpg",'wb') as f:
     	c.setopt(c.WRITEFUNCTION, f.write)
     	c.perform()
