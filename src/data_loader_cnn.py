@@ -86,7 +86,7 @@ def conv_net(x,reuse=False, dropout=0.1, kernel_size=5, filters=32, hiddenunits=
                                     filters=filters,
                                     kernel_size=kernel_size,
                                     activation=tf.nn.relu)
-        maxpool3 = tf.layers.max_pooling2d(inputs=conv2,
+        maxpool3 = tf.layers.max_pooling2d(inputs=conv3,
                                            pool_size=2,
                                            strides=2)
         flat     = tf.contrib.layers.flatten(inputs=maxpool3)
